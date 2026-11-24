@@ -1,0 +1,2 @@
+# Fase 1: só biblioteca padrão (Python 3.11+). Para os testes:
+pytest>=8
