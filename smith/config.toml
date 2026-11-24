@@ -1,0 +1,13 @@
+# Configuração do cérebro de Smith.
+# Chaves de API NUNCA ficam aqui: use variáveis de ambiente (a partir da Fase 4).
+
+[ponte]
+host = "127.0.0.1"        # só local. Não exponha em rede.
+porta = 8765
+intervalo_percepcao_ms = 2000   # o corpo envia percepção nesse ritmo (500–10000)
+ping_s = 5                       # cérebro manda ping a cada N segundos
+
+[logs]
+pasta = "logs"            # relativo a este arquivo
+nivel = "INFO"            # DEBUG grava cada mensagem inteira
+gravar_percepcoes = true  # logs/percepcoes.jsonl, uma linha por mensagem recebida
